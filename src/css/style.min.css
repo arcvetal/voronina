@@ -1,0 +1,16 @@
+body {
+  background: white;
+  background-image: url("../img/exam.jpg");
+  background-repeat: no-repeat;
+  color: red; }
+  body h1 {
+    color: red; }
+
+ul {
+  color: red;
+  font-size: 15px;
+  background-color: white;
+  font-style: italic; }
+
+p {
+  font-size: 24px; }

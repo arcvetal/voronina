@@ -1,0 +1,20 @@
+{
+  "name": "voronina",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Artsybashev Vitalii <arcvetal@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*"
+  }
+}
