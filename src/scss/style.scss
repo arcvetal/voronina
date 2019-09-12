@@ -1,2 +1,7 @@
-@import "some1.scss";
-@import "some2.scss";
+@import "variables.scss";
+
+@import "general.scss";
+@import "page-body.scss";
+@import "page-header.scss";
+@import "main-nav.scss";
+@import "burger-button.scss";

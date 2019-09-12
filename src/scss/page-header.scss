@@ -1,0 +1,36 @@
+.page-header {
+  min-width: $mobile-min-width;
+  margin: 0 auto;
+  min-height: 480px;
+  background-image: url('../img/header-bg-daria.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 320px;
+  position: relative;
+
+  &__promo {
+    position: absolute;
+    width: 322px;
+    height: 329px;
+    right: 29px;
+    box-sizing: border-box;
+    margin-left: auto;
+    padding-top: 85px;
+    padding-right: 40px;
+    background-image: url('../img/header-bg-border.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    overflow: hidden;
+    text-align: right;
+  }
+
+  &__title {
+    @include reset-item;
+    font-size: 30px;
+    color: #fffeff;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+
+  }
+}

@@ -1,0 +1,20 @@
+$mobile-min-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1180px;
+
+
+$mob-padding: 15px;
+$main-font: 'Merriweather', Georgia, serif;
+
+@mixin reset-item {
+  margin: 0;
+  padding: 0;
+}
+
+// $mobile-padding: 16px;
+// $tablet-padding: 34px;
+// $desktop-padding: 10px;
+
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

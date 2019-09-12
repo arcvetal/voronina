@@ -13,6 +13,7 @@ const gulp = require('gulp'),
     rimraf = require('rimraf'),
     browserSync = require('browser-sync').create();
     svgSprite = require('gulp-svg-sprite');
+    bulkSass = require('gulp-sass-bulk-import');
 
 const path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
@@ -65,7 +66,8 @@ gulp.task('html:build', function () {
 // // ---------  CSS
 //
 gulp.task('styles', function () {
-    return gulp.src(path.src.style) //Выберем наш main.scss
+    return gulp.src('./src/scss/style.scss')
+        .pipe(bulkSass()) //Выберем наш main.scss
         // .pipe(sourcemaps.init()) //То же самое что и с js
         // .pipe(plumber()) // пламберим
         // .pipe(rigger()) //Прогоним через rigger

@@ -1,16 +1,88 @@
 body {
-  background: white;
-  background-image: url("../img/exam.jpg");
+  margin: 0;
+  padding: 0; }
+
+.page-header {
+  min-width: 320px;
+  margin: 0 auto;
+  min-height: 480px;
+  background-image: url("../img/header-bg-daria.png");
   background-repeat: no-repeat;
-  color: red; }
-  body h1 {
-    color: red; }
+  background-position: right;
+  background-size: 320px;
+  position: relative; }
+  .page-header__promo {
+    position: absolute;
+    width: 322px;
+    height: 329px;
+    right: 29px;
+    box-sizing: border-box;
+    margin-left: auto;
+    padding-top: 85px;
+    padding-right: 40px;
+    background-image: url("../img/header-bg-border.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    overflow: hidden;
+    text-align: right; }
+  .page-header__title {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color: #fffeff;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold; }
 
-ul {
-  color: red;
-  font-size: 15px;
-  background-color: white;
-  font-style: italic; }
+.main-nav {
+  min-height: 33px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+  box-sizing: border-box;
+  margin-bottom: 70px; }
+  .main-nav__logo {
+    display: block;
+    max-height: 33px;
+    width: 112px; }
+  .main-nav__menu-list {
+    display: none; }
 
-p {
-  font-size: 24px; }
+.burger-button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 0;
+  background-color: transparent;
+  padding: 0;
+  width: 25px;
+  height: 15px;
+  border: none;
+  margin-top: 9px;
+  outline: none;
+  cursor: pointer; }
+  .burger-button span {
+    display: block;
+    position: relative;
+    width: 15px;
+    height: 2px;
+    background-color: white; }
+    .burger-button span::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: -7px;
+      right: 0;
+      width: 25px;
+      height: 2px;
+      background-color: white; }
+    .burger-button span::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 7px;
+      right: 0;
+      width: 15px;
+      height: 2px;
+      background-color: white; }

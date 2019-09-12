@@ -1,0 +1,25 @@
+.main-nav {
+  min-height: 33px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: $mob-padding;
+  box-sizing: border-box;
+  margin-bottom: 70px;
+
+  &__logo {
+    display: block;
+    max-height: 33px;
+    width: 112px;
+
+
+    & img {
+
+    }
+
+  }
+
+
+  &__menu-list {
+    display: none;
+  }
+}
