@@ -2,3 +2,24 @@ body {
   margin: 0;
   padding: 0;
 }
+
+
+@keyframes header-bg {
+  from {
+    background-image: url('../img/header-bg-daria-white.png');
+  }
+
+  to {
+    background-image: url('../img/header-bg-daria.png');
+  }
+}
+
+@keyframes header-text {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

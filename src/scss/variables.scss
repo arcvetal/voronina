@@ -4,12 +4,13 @@ $desktop-width: 1180px;
 
 
 $mob-padding: 15px;
-$main-font: 'Merriweather', Georgia, serif;
+$main-font: "Times New Roman", Times, serif;;
 
 @mixin reset-item {
   margin: 0;
   padding: 0;
 }
+
 
 // $mobile-padding: 16px;
 // $tablet-padding: 34px;
