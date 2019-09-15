@@ -1,0 +1,38 @@
+.details {
+  min-height: 390px;
+  box-sizing: border-box;
+  background-image: url("../img/details-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 120px;
+  padding-left: 14%;
+  padding-right: 23.4%;
+  
+  &__title {
+    @include reset-item;
+    font-family: $main-font;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &__text{
+    @include reset-item;
+    font-family: $main-font;
+    color: #ffffff;
+    letter-spacing: 0.8px;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  &__download {
+    display: inline-block;
+
+    & img {
+      display: block;
+    }
+  }
+}

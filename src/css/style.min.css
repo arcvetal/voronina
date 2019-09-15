@@ -17,6 +17,7 @@ body {
 .page-header {
   min-width: 320px;
   margin: 0 auto;
+  margin-bottom: 100px;
   min-height: 480px;
   background-color: #efefef;
   background-image: url("../img/header-bg-daria-white.png");
@@ -125,3 +126,82 @@ body {
       width: 15px;
       height: 2px;
       background-color: white; }
+
+.portfolio {
+  margin: 0 15px; }
+  .portfolio__title {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #212021;
+    margin-bottom: 50px; }
+    .portfolio__title::before {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 31px;
+      background-color: #cb98a8;
+      top: -57px;
+      left: calc(50% - 2px); }
+  .portfolio__item {
+    margin-bottom: 65px; }
+  .portfolio__item-img {
+    margin-bottom: 20px; }
+    .portfolio__item-img img {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: auto;
+      display: block; }
+  .portfolio__item-tag {
+    display: block;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 10px;
+    color: #1d1c1c;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 7px; }
+  .portfolio__item-title {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #1d1c1c;
+    font-weight: bold;
+    padding-right: 10px; }
+
+.details {
+  min-height: 390px;
+  box-sizing: border-box;
+  background-image: url("../img/details-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 120px;
+  padding-left: 14%;
+  padding-right: 23.4%; }
+  .details__title {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .details__text {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    color: #ffffff;
+    letter-spacing: 0.8px;
+    font-size: 14px;
+    margin-bottom: 30px; }
+  .details__download {
+    display: inline-block; }
+    .details__download img {
+      display: block; }
