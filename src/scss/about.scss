@@ -1,0 +1,73 @@
+.about {
+  margin-bottom: 140px;
+
+  &__title {
+    @include reset-item;
+    font-family: $main-font;
+    font-size: 18px;
+    text-align: center;
+    color: #212021;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 45px;
+  }
+
+  &__banner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+
+  &__banner-left {
+    margin-right: 5px;
+
+    & img {
+      display: block;
+    }
+  }
+
+  &__banner-right {
+    margin-left: 5px;
+    padding-top: 35px;
+  }
+
+  &__info {
+    padding: 0 25px;
+    text-align: center;
+  }
+
+  &__descr {
+    @include reset-item;
+    font-family: $main-font;
+    font-size: 14px;
+    color: #1d1c1c;
+    margin-bottom: 20px;
+  }
+
+  &__contacts {
+    margin-bottom: 25px;
+  }
+
+  &__mail {
+    @include reset-item;
+    font-family: $main-font;
+    font-size: 14px;
+    color: #1d1c1c;
+    text-decoration: none;
+  }
+
+  &__tel {
+    @include reset-item;
+    font-family: $main-font;
+    font-size: 14px;
+    color: #1d1c1c;
+    text-decoration: none;
+  }
+
+  &__btn {
+
+  }
+}
