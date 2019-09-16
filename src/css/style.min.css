@@ -295,7 +295,8 @@ body {
   padding: 0 50px; }
   .price__item-title span {
     display: block;
-    text-align: right; }
+    text-align: right;
+    margin-bottom: 10px; }
 
 .price__item-descr {
   margin: 0;
@@ -305,3 +306,39 @@ body {
   font-size: 14px;
   text-align: center;
   padding: 0 25px; }
+
+.contacts {
+  text-align: center; }
+  .contacts__title {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #212021;
+    font-weight: bold;
+    margin-bottom: 40px; }
+  .contacts__list {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .contacts__item {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #4e4d4e;
+    font-weight: bold;
+    margin-bottom: 20px; }
+    .contacts__item span {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 18px;
+      letter-spacing: 2px;
+      color: #8eb574;
+      font-weight: bold; }
+    .contacts__item a {
+      text-decoration: none;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #4e4d4e;
+      font-weight: bold; }

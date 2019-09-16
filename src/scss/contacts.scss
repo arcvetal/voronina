@@ -1,0 +1,44 @@
+.contacts {
+  text-align: center;
+
+  &__title {
+    font-family: $main-font;
+    @include reset-item;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #212021;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    list-style: none;
+    @include reset-item;
+  }
+
+  &__item {
+    font-family: $main-font;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #4e4d4e;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+    & span {
+      font-family: $main-font;
+      font-size: 18px;
+      letter-spacing: 2px;
+      color: #8eb574;
+      font-weight: bold;
+    }
+
+    & a {
+      text-decoration: none;
+      font-family: $main-font;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #4e4d4e;
+      font-weight: bold;
+    }
+  }
+}

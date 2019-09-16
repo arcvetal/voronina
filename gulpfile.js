@@ -40,15 +40,15 @@ const path = {
     clean: './build/**'
 };
 //
-// const config = {
-//     server: {
-//         baseDir: "./build"
-//     },
-//     tunnel: true,
-//     host: 'localhost',
-//     port: 9000,
-//     logPrefix: "Frontend_Vetal"
-// };
+const configSvg = {
+    mode: {
+      css: {
+        render: {
+          css: true
+        }
+      }
+    }
+  };
 
 
 // ---------- HTML
@@ -101,14 +101,7 @@ gulp.task('image:build', function () {
 
 gulp.task('svgSprite', function () {
     return gulp.src('./src/img/svg/*.svg') // svg files for sprite
-        .pipe(svgSprite({
-                mode: {
-                    stack: {
-                        sprite: "sprite.svg"  //sprite file name
-                    }
-                },
-            }
-        ))
+        .pipe(svgSprite(configSvg))
         .pipe(gulp.dest('./src/img/svg'));
 });
 //
