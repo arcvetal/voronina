@@ -1,3 +1,50 @@
 .social-block {
-  
+  text-align: center;
+
+  &__list {
+    list-style: none;
+    @include reset-item;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 68px;
+    margin-bottom: 100px;
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    font-size: 0;
+    display: block;
+    width: 26px;
+    height: 26px;
+    // filter: contrast(0.6);
+    transition: 0.2s all;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &:hover {
+      filter: contrast(1);
+    }
+
+
+    &--fb {
+      background-image: url("../img/svg/social-fb.svg");
+
+    }
+
+    &--inst {
+      background-image: url("../img/svg/social-inst.svg");
+    }
+
+    &--vk {
+      background-image: url("../img/svg/social-vk.svg");
+    }
+
+    &--pint {
+      background-image: url("../img/svg/social-pint.svg");
+    }
+  }
 }

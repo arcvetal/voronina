@@ -12,7 +12,7 @@ const gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     rimraf = require('rimraf'),
     browserSync = require('browser-sync').create();
-    svgSprite = require('gulp-svg-sprite');
+    svgstore = require('gulp-svgstore');
     bulkSass = require('gulp-sass-bulk-import');
 
 const path = {
@@ -40,15 +40,15 @@ const path = {
     clean: './build/**'
 };
 //
-const configSvg = {
-    mode: {
-      css: {
-        render: {
-          css: true
-        }
-      }
-    }
-  };
+// const configSvg = {
+//     mode: {
+//       css: {
+//         render: {
+//           css: true
+//         }
+//       }
+//     }
+//   };
 
 
 // ---------- HTML
@@ -86,7 +86,6 @@ gulp.task('styles', function () {
         .pipe(browserSync.stream());  // =============== потом поменять на билд
         // .pipe(browserSync.stream());
 
-
 });
 //
 //
@@ -99,10 +98,24 @@ gulp.task('image:build', function () {
         // .pipe(reload({stream: true}));
 });
 
-gulp.task('svgSprite', function () {
-    return gulp.src('./src/img/svg/*.svg') // svg files for sprite
-        .pipe(svgSprite(configSvg))
-        .pipe(gulp.dest('./src/img/svg'));
+// gulp.task('svgSprite', function () {
+//     return gulp.src('./src/img/svg/*.svg') // svg files for sprite
+//         .pipe(svgSprite(configSvg))
+//         .pipe(gulp.dest('./src/img/svg'));
+// });
+
+gulp.task('svgSprite', function() {
+  return gulp.src('./src/img/svg/*.svg')
+    .pipe(imagemin([
+      imagemin.svgo({
+        plugins: [
+          {removeViewBox: false},
+          {removeRasterImages: true}
+        ]
+      })
+    ]))
+    .pipe(svgstore())
+    .pipe(gulp.dest('src/img/svg/sprite'));
 });
 //
 // //------------------------ FONTS

@@ -342,3 +342,33 @@ body {
       letter-spacing: 1px;
       color: #4e4d4e;
       font-weight: bold; }
+
+.social-block {
+  text-align: center; }
+  .social-block__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 68px;
+    margin-bottom: 100px; }
+  .social-block__link {
+    font-size: 0;
+    display: block;
+    width: 26px;
+    height: 26px;
+    transition: 0.2s all;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .social-block__link:hover {
+      filter: contrast(1); }
+    .social-block__link--fb {
+      background-image: url("../img/svg/social-fb.svg"); }
+    .social-block__link--inst {
+      background-image: url("../img/svg/social-inst.svg"); }
+    .social-block__link--vk {
+      background-image: url("../img/svg/social-vk.svg"); }
+    .social-block__link--pint {
+      background-image: url("../img/svg/social-pint.svg"); }
