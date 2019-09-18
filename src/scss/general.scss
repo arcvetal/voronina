@@ -6,11 +6,10 @@ body {
 
 @keyframes header-bg {
   from {
-    background-image: url('../img/header-bg-daria-white.png');
   }
 
   to {
-    background-image: url('../img/header-bg-daria.png');
+    filter: brightness(55%);
   }
 }
 

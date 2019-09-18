@@ -17,6 +17,12 @@
 
   &__item-img {
     margin-bottom: 20px;
+
+    & img {
+      display: block;
+      min-width: 100%;
+      height: auto;
+    }
   }
 
   &__item-title {

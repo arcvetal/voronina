@@ -4,15 +4,26 @@
   margin-bottom: 100px;
   min-height: 480px;
   background-color: #efefef;
-  background-image: url('../img/header-bg-daria-white.png');
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 320px;
+  // background-image: url('../img/header-bg-daria-white.png');
+
   position: relative;
-  animation-name: header-bg;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+  // animation-name: header-bg;
+
+
+  &::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url('../img/header-bg-daria-white.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 320px;
+    animation-name: header-bg;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
 
 
   &__promo {
