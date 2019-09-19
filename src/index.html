@@ -12,7 +12,12 @@
 
     <nav class="main-nav">
       <a href="#" class="main-nav__logo">
-        <img src="./img/logo.png" alt="Лого Воронина">
+
+        <picture class="project__media-item-wrapper">
+              <source media="(min-width: 768px)" srcset="./img/logo-tablet.png">
+
+              <img src="./img/logo.png" alt="Лого Воронина">
+        </picture>
       </a>
       <div class="main-nav__menu">
         <button class="burger-button" type="button">
@@ -28,6 +33,8 @@
 
 
       </div>
+
+      <p class="main-nav__phone">+ 7 916 66 77 112</p>
     </nav>
 
 

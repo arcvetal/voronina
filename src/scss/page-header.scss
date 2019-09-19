@@ -3,7 +3,7 @@
   margin: 0 auto;
   margin-bottom: 100px;
   min-height: 480px;
-  background-color: #efefef;
+  background-color: #f8f8f8;
   // background-image: url('../img/header-bg-daria-white.png');
 
   position: relative;
@@ -77,4 +77,12 @@
     width: 22px;
     font-size: 0;
   }
+}
+
+
+@media(min-width: $tablet-width) {
+  .page-header {
+
+  }
+
 }

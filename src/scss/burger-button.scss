@@ -46,3 +46,22 @@
 
   }
 }
+
+@media(min-width: $tablet-width){
+  .burger-button {
+
+
+    & span {
+      background-color: #3b3b3b;
+
+      &::before {
+        right:-10px;
+        background-color: #3b3b3b;
+      }
+
+      &::after {
+        background-color: #3b3b3b;
+      }
+    }
+  }
+}
