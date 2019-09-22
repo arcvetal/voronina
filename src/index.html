@@ -43,9 +43,23 @@
       <div class="page-header__info">
         <h1 class="page-header__title">Дарья Воронина</h1>
         <p class="page-header__text">Food — фотограф и food — стилист<br> в Москве и Московской области</p>
-        <a href="@" class="page-header__btn"><img src="./img/header-btn.png" alt="Кнопка-портфолио">Портфолио</a>
+        <a href="#" class="page-header__btn">
+
+          <picture class="project__media-item-wrapper">
+                <source media="(min-width: 768px)" srcset="./img/header-btn-tablet.png">
+
+                <img src="./img/header-btn.png" alt="Кнопка-портфолио">
+          </picture>
+
+
+          Портфолио
+        </a>
       </div>
 
+    </div>
+    <div class="page-header__links">
+      <a href="#" class="page-header__link page-header__link--inst">Instagram</a>
+      <a href="#" class="page-header__link page-header__link--fb">Facebook</a>
     </div>
   </header>
 
@@ -54,30 +68,39 @@
     <section class="portfolio wrapper">
 
       <h2 class="portfolio__title">Портфолио</h2>
-  <!-- 1 -->
-      <div class="portfolio__item">
-        <div class="portfolio__item-img"><img src="./img/portfolio-1.png" alt="портфолио-1" width="290" height="374"></div>
-        <span class="portfolio__item-tag">#соцсети</span>
-        <p class="portfolio__item-title">Фото контент для социальных сетей кондитерской «Леди Мармелад»</p>
+
+      <div class="portfolio__list">
+    <!-- 1 -->
+        <div class="portfolio__item  portfolio__item--first">
+          <div class="portfolio__item-img"><img src="./img/portfolio-1.png" alt="портфолио-1" width="290" height="374"></div>
+          <span class="portfolio__item-tag">#соцсети</span>
+          <p class="portfolio__item-title">Фото контент для социальных сетей кондитерской «Леди Мармелад»</p>
+        </div>
+
+        <div class="portfolio__list-middle">
+      <!-- 2 -->
+          <div class="portfolio__item">
+            <div class="portfolio__item-img"><img src="./img/portfolio-2.png" alt="портфолио-2" width="290" height="374"></div>
+            <span class="portfolio__item-tag">#соцсети</span>
+            <p class="portfolio__item-title">Фото контент для инстаграма ресторана «Funky Food»</p>
+          </div>
+      <!-- 3 -->
+          <div class="portfolio__item">
+            <div class="portfolio__item-img"><img src="./img/portfolio-3.png" alt="портфолио-3" width="290" height="374"></div>
+            <span class="portfolio__item-tag">#менюресторана</span>
+            <p class="portfolio__item-title">Съемка меню ресторана  «Хорошая еда»</p>
+          </div>
+        </div>
+
+
+    <!-- 4 -->
+        <div class="portfolio__item  portfolio__item--last>
+          <div class="portfolio__item-img"><img src="./img/portfolio-4.png" alt="портфолио-4" width="290" height="374"></div>
+          <span class="portfolio__item-tag">#рекламнаясъемка</span>
+          <p class="portfolio__item-title">Съемка для баннерной рекламной печати ресторана «Бранч»</p>
+        </div>
       </div>
-  <!-- 2 -->
-      <div class="portfolio__item">
-        <div class="portfolio__item-img"><img src="./img/portfolio-2.png" alt="портфолио-2" width="290" height="374"></div>
-        <span class="portfolio__item-tag">#соцсети</span>
-        <p class="portfolio__item-title">Фото контент для инстаграма ресторана «Funky Food»</p>
-      </div>
-  <!-- 3 -->
-      <div class="portfolio__item">
-        <div class="portfolio__item-img"><img src="./img/portfolio-3.png" alt="портфолио-3" width="290" height="374"></div>
-        <span class="portfolio__item-tag">#менюресторана</span>
-        <p class="portfolio__item-title">Съемка меню ресторана  «Хорошая еда»</p>
-      </div>
-  <!-- 4 -->
-      <div class="portfolio__item">
-        <div class="portfolio__item-img"><img src="./img/portfolio-4.png" alt="портфолио-4" width="290" height="374"></div>
-        <span class="portfolio__item-tag">#рекламнаясъемка</span>
-        <p class="portfolio__item-title">Съемка для баннерной рекламной печати ресторана «Бранч»</p>
-      </div>
+
 
     </section>
 

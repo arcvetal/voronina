@@ -65,17 +65,11 @@
     min-height: 60px;
 
 
-
-
-
-
-
-
-
     &__phone {
       display: block;
       align-self: center;
       @include reset-item;
+      margin-right: 125px;
       font-family: $main-font;
       color: #3b3b3b;
       font-weight: bold;

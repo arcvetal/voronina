@@ -75,8 +75,68 @@ body {
   .page-header__btn {
     display: block;
     width: 131px;
-    width: 22px;
+    height: 22px;
     font-size: 0; }
+  .page-header__links {
+    display: none; }
+
+@media (min-width: 768px) {
+  .page-header {
+    min-height: 825px;
+    background-image: url("../img/header-bg-tablet.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 460px 0; }
+    .page-header::before {
+      width: 327px;
+      height: 499px;
+      top: 162px;
+      left: 50%;
+      background-size: 327px 499px;
+      animation-name: initial; }
+    .page-header__promo {
+      background: none;
+      right: initial;
+      position: static;
+      margin-left: initial;
+      width: auto;
+      padding-top: 170px; }
+    .page-header__title {
+      color: #212021;
+      font-size: 36px; }
+    .page-header__text {
+      color: #212021;
+      font-size: 16px; }
+    .page-header__btn {
+      width: 151px;
+      height: 23px; }
+      .page-header__btn img {
+        height: 22px; }
+    .page-header__links {
+      display: flex;
+      position: absolute;
+      left: 61px;
+      bottom: 81px;
+      min-width: 170px;
+      justify-content: space-between; }
+    .page-header__link {
+      position: relative;
+      font-family: "Times New Roman", Times, serif;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: #212021;
+      font-weight: 300; }
+      .page-header__link--inst::after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        background-color: #212021;
+        top: 6px;
+        right: -15px; } }
 
 .main-nav {
   min-height: 33px;
@@ -128,6 +188,7 @@ body {
       align-self: center;
       margin: 0;
       padding: 0;
+      margin-right: 125px;
       font-family: "Times New Roman", Times, serif;
       color: #3b3b3b;
       font-weight: bold;
@@ -232,6 +293,17 @@ body {
   font-weight: bold;
   padding-right: 10px; }
 
+@media (min-width: 768px) {
+  .portfolio__list {
+    display: flex;
+    align-items: center; }
+  .portfolio__list-middle {
+    margin: 0 17px; }
+  .portfolio__item {
+    min-width: 184px; }
+    .portfolio__item--first {
+      min-width: 240px; } }
+
 .details {
   min-height: 122vw;
   box-sizing: border-box;
@@ -320,6 +392,10 @@ body {
 
 .wrapper {
   padding: 0 15px; }
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 0 62px; } }
 
 .price__title {
   margin: 0;
