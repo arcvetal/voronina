@@ -56,3 +56,31 @@
   }
 
 }
+
+@media(min-width: $tablet-width) {
+  .portfolio {
+
+    &__list {
+      display: flex;
+      align-items: center;
+    }
+
+    &__list-middle {
+      margin: 0 17px;
+    }
+
+
+    &__item {
+      min-width: 184px;
+
+      &--first {
+        min-width: 240px;
+      }
+
+      &--last {
+      }
+
+    }
+
+  }
+}
