@@ -71,3 +71,56 @@
 
   }
 }
+
+@media(min-width: $tablet-width) {
+  .about {
+    margin-bottom: 250px;
+
+    &__title {
+      font-size: 24px;
+    }
+
+
+    &__banner-left {
+      margin-right: 14px;
+    }
+
+    &__banner-right {
+      margin-left: 14px;
+    }
+
+    &__info {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__descr {
+      width: 306px;
+      margin-right: 14px;
+      margin-left: 12px;
+      margin-top: -50px;
+      font-size: 16px;
+      text-align: left;
+      color: #1d1c1c;
+    }
+
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 306px;
+      margin-left: 14px;
+    }
+
+    &__tel {
+      font-size: 16px;
+      color: #1d1c1c;
+    }
+
+    &__mail {
+      margin-bottom: 29px;
+      font-size: 16px;
+      color: #1d1c1c;
+    }
+  }
+}

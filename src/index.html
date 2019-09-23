@@ -65,6 +65,8 @@
 
   <main class="content">
 
+<!-- ПОртфолио -->
+
     <section class="portfolio wrapper">
 
       <h2 class="portfolio__title">Портфолио</h2>
@@ -86,7 +88,9 @@
           </div>
       <!-- 3 -->
           <div class="portfolio__item">
-            <div class="portfolio__item-img"><img src="./img/portfolio-3.png" alt="портфолио-3" width="290" height="374"></div>
+            <div class="portfolio__item-img">
+              <img src="./img/portfolio-3.png" alt="портфолио-3" width="290" height="374">
+            </div>
             <span class="portfolio__item-tag">#менюресторана</span>
             <p class="portfolio__item-title">Съемка меню ресторана  «Хорошая еда»</p>
           </div>
@@ -94,25 +98,32 @@
 
 
     <!-- 4 -->
-        <div class="portfolio__item  portfolio__item--last>
-          <div class="portfolio__item-img"><img src="./img/portfolio-4.png" alt="портфолио-4" width="290" height="374"></div>
+        <div class="portfolio__item  portfolio__item--last">
+          <div class="portfolio__item-img">
+            <img src="./img/portfolio-4.png" alt="портфолио-4" width="290" height="374">
+          </div>
           <span class="portfolio__item-tag">#рекламнаясъемка</span>
           <p class="portfolio__item-title">Съемка для баннерной рекламной печати ресторана «Бранч»</p>
         </div>
       </div>
 
-
     </section>
 
-<!-- ПОртфолио -->
 
     <section class="details">
-      <h3 class="details__title">Подробное портфолио</h3>
-      <p class="details__text">С описанием задач заказчика, полного процесса работы  и финальным результатом</p>
+      <div class="details__promo">
+        <h3 class="details__title">Подробное портфолио</h3>
+        <p class="details__text">С описанием задач заказчика, полного процесса работы  и финальным результатом</p>
 
-      <a href="#" class="details__download">
-        <img src="./img/details-btn.png" alt="Скачать в pdf">
-      </a>
+        <a href="#" class="details__download">
+          <picture>
+            <source  media="(min-width: 768px)" srcset="./img/details-btn-tablet.png">
+          <img src="./img/details-btn.png" alt="Скачать в pdf">
+
+          </picture>
+        </a>
+      </div>
+
     </section>
 
 <!-- about -->
@@ -122,22 +133,32 @@
 
       <div class="about__banner">
         <div class="about__banner-left">
-          <img src="./img/banner-left.png" alt="Баннер левый">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/banner-left-tablet.png">
+            <img src="./img/banner-left.png" alt="Баннер левый">
+          </picture>
         </div>
         <div class="about__banner-right">
-          <img src="./img/banner-right.png" alt="Баннер правый">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/banner-right-tablet.png">
+            <img src="./img/banner-right.png" alt="Баннер правый">
+          </picture>
         </div>
       </div>
 
-      <div class="about__info">
+      <div class="about__info wrapper">
         <p class="about__descr">Во всех фотосъемках еды, я работаю как фуд-фотограф и фуд-стилист. Создаю креативные концепции, реализую ваши идеи. Разрабатываю рецепты, вкусно снимаю. Провожу обучение.</p>
         <div class="about__contacts">
           <a href="mailto:arcvetal@yahoo.com" class="about__tel">Tel.: daria.voronina@gmail.com</a><br>
           <a href="tel:+79166677112" class="about__mail">Mail: + 7 916 66 77 112</a>
+          <a href="#" class="about__btn">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/about-btn-tablet.png">
+              <img src="./img/about-btn.png" alt="Кнопка работать со мной">
+            </picture>
+          </a>
         </div>
-        <a href="#" class="about__btn">
-          <img src="./img/about-btn.png" alt="Кнопка работать со мной">
-        </a>
+
       </div>
 
     </section>
@@ -147,11 +168,14 @@
     <section class="price">
       <h2 class="price__title">Стоимость</h2>
 
-      <div class="wrapper">
+      <div class="price__list wrapper">
   <!-- 1 -->
         <div class="price__item">
           <div class="price__item-img">
-            <img src="./img/price-img-1.png" alt="Фото 1">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/price-img-1-tablet.png">
+              <img src="./img/price-img-1.png" alt="Фото 1">
+            </picture>
           </div>
           <p class="price__item-title">12 часов съемки <span>30000 рублей</span></p>
           <p class="price__item-descr">
@@ -162,9 +186,12 @@
             Цветокорекция и пост-обработка результаты в течение 3-х дней</p>
         </div>
   <!-- 2 -->
-        <div class="price__item">
+        <div class="price__item  price__item--middle">
           <div class="price__item-img">
-            <img src="./img/price-img-2.png" alt="Фото 2">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/price-img-2-tablet.png">
+              <img src="./img/price-img-2.png" alt="Фото 2">
+            </picture>
           </div>
           <p class="price__item-title">4 часа съемки <span>15000 рублей</span></p>
           <p class="price__item-descr">
@@ -178,7 +205,10 @@
   <!-- 3 -->
         <div class="price__item">
           <div class="price__item-img">
-            <img src="./img/price-img-3.png" alt="Фото 3">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/price-img-3-tablet.png">
+              <img src="./img/price-img-3.png" alt="Фото 3">
+            </picture>
           </div>
           <p class="price__item-title"> 1 час съемки <span>4000 рублей</span></p>
           <p class="price__item-descr">

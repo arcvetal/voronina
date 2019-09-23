@@ -42,3 +42,25 @@
     }
   }
 }
+
+@media(min-width: $tablet-width) {
+  .contacts {
+    margin-bottom: 55px;
+
+    &__title {
+      font-size: 24px;
+      letter-spacing: 2px;
+      margin-bottom: 70px;
+    }
+
+    &__item {
+      font-size: 16px;
+      letter-spacing: 2px;
+
+      & a {
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}

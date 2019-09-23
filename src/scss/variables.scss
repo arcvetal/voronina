@@ -6,7 +6,8 @@ $desktop-width: 1180px;
 // ===================================
 
 $mob-padding: 15px;
-$main-font: "Times New Roman", Times, serif;;
+$main-font: "Times New Roman", Times, serif;
+$font-color: #212021;
 
 @mixin reset-item {
   margin: 0;

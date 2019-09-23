@@ -52,3 +52,35 @@
     padding: 0 25px;
   }
 }
+
+@media(min-width: $tablet-width) {
+  .price {
+    margin-bottom: 310px;
+
+    &__title {
+      font-size: 24px;
+
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      margin-top: 100px;
+
+      &--middle {
+        margin: 0 17px;
+      }
+    }
+
+    &__item-title {
+      font-size: 16px;
+      padding: 0 35px;
+    }
+
+    &__item-descr {
+      padding: 0 18px;
+    }
+  }
+}

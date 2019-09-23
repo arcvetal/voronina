@@ -138,10 +138,6 @@ body {
         top: 6px;
         right: -15px; } }
 
-@media (min-width: 768px) {
-  .page-header {
-    min-height: 825px; } }
-
 .main-nav {
   min-height: 33px;
   display: flex;
@@ -344,6 +340,56 @@ body {
     .details__download img {
       display: block; }
 
+@media (min-width: 768px) {
+  .details {
+    position: relative;
+    width: initial;
+    min-height: initial;
+    margin: 0;
+    padding: 0;
+    background: none;
+    margin-bottom: 200px; }
+    .details::before {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 150vw;
+      height: 300px;
+      background-color: #f8f8f8;
+      top: -30px;
+      right: 100px;
+      z-index: -1; }
+    .details__promo {
+      width: 582px;
+      position: relative;
+      box-sizing: border-box;
+      min-height: 343px;
+      padding: 0;
+      padding-top: 75px;
+      padding-left: 165px;
+      padding-right: 150px;
+      margin-left: auto;
+      margin-right: 62px;
+      outline: 8px solid #8eb574;
+      outline-offset: -8px; }
+      .details__promo::before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 30px;
+        left: -315px;
+        width: 450px;
+        height: 275px;
+        background-image: url("../img/details-bg-tablet.png");
+        background-repeat: no-repeat;
+        background-size: cover; }
+    .details__title {
+      color: #212021;
+      font-size: 24px; }
+    .details__text {
+      color: #212021;
+      font-size: 16px; } }
+
 .about {
   margin-bottom: 140px; }
   .about__title {
@@ -396,6 +442,40 @@ body {
     font-size: 14px;
     color: #1d1c1c;
     text-decoration: none; }
+
+@media (min-width: 768px) {
+  .about {
+    margin-bottom: 250px; }
+    .about__title {
+      font-size: 24px; }
+    .about__banner-left {
+      margin-right: 14px; }
+    .about__banner-right {
+      margin-left: 14px; }
+    .about__info {
+      display: flex;
+      justify-content: center; }
+    .about__descr {
+      width: 306px;
+      margin-right: 14px;
+      margin-left: 12px;
+      margin-top: -50px;
+      font-size: 16px;
+      text-align: left;
+      color: #1d1c1c; }
+    .about__contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 306px;
+      margin-left: 14px; }
+    .about__tel {
+      font-size: 16px;
+      color: #1d1c1c; }
+    .about__mail {
+      margin-bottom: 29px;
+      font-size: 16px;
+      color: #1d1c1c; } }
 
 .wrapper {
   padding: 0 15px; }
@@ -450,6 +530,23 @@ body {
   text-align: center;
   padding: 0 25px; }
 
+@media (min-width: 768px) {
+  .price {
+    margin-bottom: 310px; }
+    .price__title {
+      font-size: 24px; }
+    .price__list {
+      display: flex; }
+    .price__item {
+      margin-top: 100px; }
+      .price__item--middle {
+        margin: 0 17px; }
+    .price__item-title {
+      font-size: 16px;
+      padding: 0 35px; }
+    .price__item-descr {
+      padding: 0 18px; } }
+
 .contacts {
   text-align: center; }
   .contacts__title {
@@ -486,6 +583,20 @@ body {
       color: #4e4d4e;
       font-weight: bold; }
 
+@media (min-width: 768px) {
+  .contacts {
+    margin-bottom: 55px; }
+    .contacts__title {
+      font-size: 24px;
+      letter-spacing: 2px;
+      margin-bottom: 70px; }
+    .contacts__item {
+      font-size: 16px;
+      letter-spacing: 2px; }
+      .contacts__item a {
+        font-size: 16px;
+        letter-spacing: 2px; } }
+
 .social-block {
   text-align: center; }
   .social-block__list {
@@ -515,3 +626,17 @@ body {
       background-image: url("../img/svg/social-vk.svg"); }
     .social-block__link--pint {
       background-image: url("../img/svg/social-pint.svg"); }
+
+@media (min-width: 768px) {
+  .social-block__list {
+    justify-content: center; }
+  .social-block__item {
+    margin-right: 20px; }
+    .social-block__item:last-of-type {
+      margin-right: 0; }
+  .social-block__link {
+    width: 34px;
+    height: 34px; }
+    .social-block__link img {
+      min-width: 100%;
+      height: auto; } }

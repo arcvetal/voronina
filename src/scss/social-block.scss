@@ -48,3 +48,33 @@
     }
   }
 }
+
+@media(min-width: $tablet-width) {
+  .social-block {
+
+
+    &__list {
+      justify-content: center;
+    }
+
+    &__item {
+    margin-right: 20px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    }
+
+    &__link {
+      width: 34px;
+      height: 34px;
+
+      & img {
+        min-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+}
