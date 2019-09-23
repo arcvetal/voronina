@@ -78,6 +78,10 @@ body {
     width: 22px;
     font-size: 0; }
 
+@media (min-width: 768px) {
+  .page-header {
+    min-height: 825px; } }
+
 .main-nav {
   min-height: 33px;
   display: flex;
@@ -132,7 +136,8 @@ body {
       color: #3b3b3b;
       font-weight: bold;
       font-size: 18px;
-      z-index: 2; } }
+      z-index: 2;
+      margin-right: 125px; } }
 
 .burger-button {
   display: flex;
@@ -175,13 +180,15 @@ body {
       background-color: white; }
 
 @media (min-width: 768px) {
-  .burger-button span {
-    background-color: #3b3b3b; }
-    .burger-button span::before {
-      right: -10px;
+  .burger-button {
+    margin-top: 25px; }
+    .burger-button span {
       background-color: #3b3b3b; }
-    .burger-button span::after {
-      background-color: #3b3b3b; } }
+      .burger-button span::before {
+        right: -10px;
+        background-color: #3b3b3b; }
+      .burger-button span::after {
+        background-color: #3b3b3b; } }
 
 .portfolio__title {
   position: relative;
