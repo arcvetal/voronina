@@ -138,6 +138,10 @@ body {
         top: 6px;
         right: -15px; } }
 
+@media (min-width: 920px) {
+  .page-header {
+    background-position: right; } }
+
 .main-nav {
   min-height: 33px;
   display: flex;
@@ -196,6 +200,27 @@ body {
       z-index: 2;
       margin-right: 125px; } }
 
+@media (min-width: 920px) {
+  .main-nav__menu-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 76px;
+    background-color: transparent;
+    width: 50vw;
+    margin-left: 250px; }
+  .main-nav__menu-item {
+    margin-bottom: 0;
+    margin-right: 20px; }
+    .main-nav__menu-item:last-of-type {
+      margin-right: 0; }
+    .main-nav__menu-item a {
+      font-size: 18px;
+      font-weight: normal; }
+    .main-nav__menu-item:first-of-type {
+      display: none; } }
+
 .burger-button {
   display: flex;
   flex-direction: column;
@@ -246,6 +271,10 @@ body {
         background-color: #3b3b3b; }
       .burger-button span::after {
         background-color: #3b3b3b; } }
+
+@media (min-width: 920px) {
+  .burger-button {
+    display: none; } }
 
 .portfolio__title {
   position: relative;

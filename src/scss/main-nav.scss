@@ -64,7 +64,6 @@
   .main-nav {
     min-height: 60px;
 
-
     &__phone {
       display: block;
       align-self: center;
@@ -76,6 +75,42 @@
       font-size: 18px;
       z-index: 2;
       margin-right: 125px;
+    }
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .main-nav {
+
+
+    &__menu-list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 76px;
+      background-color: transparent;
+      width: 50vw;
+      margin-left: 250px;
+
+    }
+
+    &__menu-item {
+      margin-bottom: 0;
+      margin-right: 20px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      & a {
+        font-size: 18px;
+        font-weight: normal;
+      }
+
+      &:first-of-type {
+        display: none;
+      }
     }
   }
 }

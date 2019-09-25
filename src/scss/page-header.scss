@@ -163,3 +163,9 @@
   }
 
 }
+
+@media(min-width: $desktop-width) {
+  .page-header {
+    background-position: right;
+  }
+}
