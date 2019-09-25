@@ -75,6 +75,22 @@
 @media(min-width: $tablet-width) {
   .about {
     margin-bottom: 250px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -116px;
+      right: 280px;
+      display: block;
+      width: 44px;
+      height: 34px;
+      background-image: url("../img/about-list-1.png");
+      background-repeat: no-repeat;
+      background-color: white;
+      background-size: contain;
+      background-position: center;
+    }
 
     &__title {
       font-size: 24px;

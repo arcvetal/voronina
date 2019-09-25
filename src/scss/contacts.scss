@@ -45,7 +45,25 @@
 
 @media(min-width: $tablet-width) {
   .contacts {
+    position: relative;
     margin-bottom: 55px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 27px;
+      left: 40px;
+      display: block;
+      width: 58px;
+      height: 50px;
+    
+      background-image: url("../img/contacts-list-1.png");
+      background-repeat: no-repeat;
+      background-color: white;
+      background-size: contain;
+      background-position: center;
+    }
+
 
     &__title {
       font-size: 24px;
