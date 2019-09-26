@@ -82,16 +82,15 @@
 @media(min-width: $desktop-width) {
   .main-nav {
 
-
     &__menu-list {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: space-around;
       min-height: 76px;
       background-color: transparent;
-      width: 50vw;
-      margin-left: 250px;
+      width: calc(32.5vw * 1.15);
+      margin-left: 255px;
 
     }
 
@@ -111,6 +110,10 @@
       &:first-of-type {
         display: none;
       }
+    }
+
+    &__phone {
+      padding-top: 15px;
     }
   }
 }

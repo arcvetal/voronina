@@ -166,6 +166,23 @@
 
 @media(min-width: $desktop-width) {
   .page-header {
-    background-position: right;
+    background-position: 65vw 0;
+  }
+}
+
+
+
+@media(min-width: $fullhd-width) {
+  .page-header {
+    background-image: url('../img/header-bg-desktop.png');
+      background-position: right -18vw center;
+  }
+
+}
+
+
+@media(min-width: $laptpop-width) {
+  .page-header {
+    background-position: right -8vw center;
   }
 }
