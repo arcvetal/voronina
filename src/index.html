@@ -13,7 +13,7 @@
     <nav class="main-nav">
       <a href="#" class="main-nav__logo">
 
-        <picture class="project__media-item-wrapper">
+        <picture>
               <source media="(min-width: 920px)" srcset="./img/logo-desktop.png">
               <source media="(min-width: 768px)" srcset="./img/logo-tablet.png">
               <img src="./img/logo.png" alt="Лого Воронина">
@@ -45,7 +45,7 @@
         <p class="page-header__text">Food — фотограф и food — стилист<br> в Москве и Московской области</p>
         <a href="#" class="page-header__btn">
 
-          <picture class="project__media-item-wrapper">
+          <picture>
                 <source media="(min-width: 768px)" srcset="./img/header-btn-tablet.png">
 
                 <img src="./img/header-btn.png" alt="Кнопка-портфолио">
@@ -74,7 +74,12 @@
       <div class="portfolio__list">
     <!-- 1 -->
         <div class="portfolio__item  portfolio__item--first">
-          <div class="portfolio__item-img"><img src="./img/portfolio-1.png" alt="портфолио-1" width="290" height="374"></div>
+          <div class="portfolio__item-img">
+            <picture>
+              <source media="(min-width: 1400px)" srcset="./img/portfolio-1-desktop.png">
+              <img src="./img/portfolio-1.png" alt="портфолио-1" width="290" height="374">
+            </picture>
+          </div>
           <span class="portfolio__item-tag">#соцсети</span>
           <p class="portfolio__item-title">Фото контент для социальных сетей кондитерской «Леди Мармелад»</p>
         </div>
@@ -82,14 +87,23 @@
         <div class="portfolio__list-middle">
       <!-- 2 -->
           <div class="portfolio__item">
-            <div class="portfolio__item-img"><img src="./img/portfolio-2.png" alt="портфолио-2" width="290" height="374"></div>
+            <div class="portfolio__item-img">
+              <picture>
+                <source media="(min-width: 1400px)" srcset="./img/portfolio-2-desktop.png">
+                <img src="./img/portfolio-2.png" alt="портфолио-2" width="290" height="374">
+              </picture>
+            </div>
             <span class="portfolio__item-tag">#соцсети</span>
             <p class="portfolio__item-title">Фото контент для инстаграма ресторана «Funky Food»</p>
           </div>
       <!-- 3 -->
           <div class="portfolio__item">
             <div class="portfolio__item-img">
-              <img src="./img/portfolio-3.png" alt="портфолио-3" width="290" height="374">
+              <picture>
+                <source media="(min-width: 1400px)" srcset="./img/portfolio-3-desktop.png">
+                <img src="./img/portfolio-3.png" alt="портфолио-3" width="290" height="374">
+              </picture>
+
             </div>
             <span class="portfolio__item-tag">#менюресторана</span>
             <p class="portfolio__item-title">Съемка меню ресторана  «Хорошая еда»</p>
@@ -100,7 +114,10 @@
     <!-- 4 -->
         <div class="portfolio__item  portfolio__item--last">
           <div class="portfolio__item-img">
-            <img src="./img/portfolio-4.png" alt="портфолио-4" width="290" height="374">
+            <picture>
+              <source media="(min-width: 1400px)" srcset="./img/portfolio-4-desktop.png">
+              <img src="./img/portfolio-4.png" alt="портфолио-4" width="290" height="374">
+            </picture>
           </div>
           <span class="portfolio__item-tag">#рекламнаясъемка</span>
           <p class="portfolio__item-title">Съемка для баннерной рекламной печати ресторана «Бранч»</p>
@@ -131,32 +148,38 @@
     <section class="about">
       <h2 class="about__title">Обо мне</h2>
 
-      <div class="about__banner">
-        <div class="about__banner-left">
-          <picture>
-            <source media="(min-width: 768px)" srcset="./img/banner-left-tablet.png">
-            <img src="./img/banner-left.png" alt="Баннер левый">
-          </picture>
-        </div>
-        <div class="about__banner-right">
-          <picture>
-            <source media="(min-width: 768px)" srcset="./img/banner-right-tablet.png">
-            <img src="./img/banner-right.png" alt="Баннер правый">
-          </picture>
-        </div>
-      </div>
+      <div class="about__content">
 
-      <div class="about__info wrapper">
-        <p class="about__descr">Во всех фотосъемках еды, я работаю как фуд-фотограф и фуд-стилист. Создаю креативные концепции, реализую ваши идеи. Разрабатываю рецепты, вкусно снимаю. Провожу обучение.</p>
-        <div class="about__contacts">
-          <a href="mailto:arcvetal@yahoo.com" class="about__tel">Tel.: daria.voronina@gmail.com</a><br>
-          <a href="tel:+79166677112" class="about__mail">Mail: + 7 916 66 77 112</a>
-          <a href="#" class="about__btn">
+        <div class="about__banner">
+          <div class="about__banner-left">
             <picture>
-              <source media="(min-width: 768px)" srcset="./img/about-btn-tablet.png">
-              <img src="./img/about-btn.png" alt="Кнопка работать со мной">
+              <source media="(min-width: 1400px)" srcset="./img/banner-left-desktop.png">
+              <source media="(min-width: 768px)" srcset="./img/banner-left-tablet.png">
+              <img src="./img/banner-left.png" alt="Баннер левый">
             </picture>
-          </a>
+          </div>
+          <div class="about__banner-right">
+            <picture>
+              <source media="(min-width: 1400)" srcset="./img/banner-right-desktop.png">
+              <source media="(min-width: 768px)" srcset="./img/banner-right-tablet.png">
+              <img src="./img/banner-right.png" alt="Баннер правый">
+            </picture>
+          </div>
+        </div>
+
+        <div class="about__info">
+          <p class="about__descr">Во всех фотосъемках еды, я работаю как фуд-фотограф и фуд-стилист. Создаю креативные концепции, реализую ваши идеи. Разрабатываю рецепты, вкусно снимаю. Провожу обучение.</p>
+          <p class="about__descr  about__descr--glad">Всегда открыта к сотрудничеству и рада новым предложениям.</p>
+          <div class="about__contacts">
+            <a href="mailto:arcvetal@yahoo.com" class="about__tel">Tel.: daria.voronina@gmail.com</a><br>
+            <a href="tel:+79166677112" class="about__mail">Mail: + 7 916 66 77 112</a>
+            <a href="#" class="about__btn">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/about-btn-tablet.png">
+                <img src="./img/about-btn.png" alt="Кнопка работать со мной">
+              </picture>
+            </a>
+          </div>
         </div>
 
       </div>

@@ -129,3 +129,32 @@
     }
   }
 }
+
+@media(min-width: $desktop-width) {
+  .details {
+
+    &__promo {
+      min-width: 709px;
+      min-height: 468px;
+      margin-left: 419px;
+      padding-left: 220px;
+      margin-right: auto;
+
+      &::before {
+        height: 360px;
+      }
+
+      &::after {
+        width: 615px;
+        height: 373px;
+        left: -424px;
+        top: 45px;
+        background-image: url('../img/details-bg-desktop.png');
+      }
+    }
+
+    &__text {
+      width: 253px;
+    }
+  }
+}

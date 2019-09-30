@@ -74,13 +74,15 @@
       font-weight: bold;
       font-size: 18px;
       z-index: 2;
-      margin-right: 125px;
+      margin-right: 18.5vw;
     }
   }
 }
 
 @media(min-width: $desktop-width) {
   .main-nav {
+    padding-right: 0;
+
 
     &__menu-list {
       display: flex;
@@ -114,6 +116,7 @@
 
     &__phone {
       padding-top: 15px;
+      // margin-right: 400px;
     }
   }
 }

@@ -45,6 +45,10 @@
     font-size: 14px;
     color: #1d1c1c;
     margin-bottom: 20px;
+
+    &--glad {
+      display: none;
+    }
   }
 
   &__contacts {
@@ -139,4 +143,63 @@
       color: #1d1c1c;
     }
   }
+}
+
+@media(min-width: $desktop-width) {
+  .about {
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__content {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: 184px;
+      padding-right: 235px;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 339px;
+        width: 26.25vw;
+        background-color: #f8f8f8;
+        left: 0;
+        top: -53px;
+        z-index: -1;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 484px;
+        width: 646px;
+        background-color: #f8f8f8;
+        right: 10.5vw;
+        top: 75px;
+        z-index: -1;
+      }
+    }
+
+    &__banner {
+      min-width: 660px;
+    }
+
+    &__info {
+      flex-direction: column;
+      padding-top: 40px;
+    }
+
+    &__descr {
+      margin-top: 0;
+      
+      &--glad {
+        display: block;
+      }
+    }
+  }
+
 }
