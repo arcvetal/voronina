@@ -818,6 +818,18 @@ body {
     .price__item-descr {
       padding: 0 18px; } }
 
+@media (min-width: 920px) {
+  .price__title {
+    font-size: 36px;
+    margin-bottom: 200px; }
+  .price__list {
+    padding: 0 165px;
+    justify-content: space-between; }
+  .price__item {
+    flex-grow: 1; }
+    .price__item--middle {
+      margin: 0 30px; } }
+
 .contacts {
   text-align: center; }
   .contacts__title {
