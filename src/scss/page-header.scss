@@ -1,26 +1,30 @@
 .page-header {
-  min-width: $mobile-min-width;
-  margin: 0 auto;
-  margin-bottom: 100px;
-  min-height: 480px;
   background-color: #f8f8f8;
-  position: relative;
 
-  &::before {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: "";
-    background-image: url('../img/header-bg-daria-white.png');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 320px;
-    animation-name: header-bg;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+  &__container {
+    min-width: $mobile-min-width;
+    width: 320px;
+    margin: 0 auto;
+    margin-right: 0;
+    margin-bottom: 100px;
+    min-height: 480px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: "";
+      background-image: url('../img/header-bg-daria-white.png');
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: 320px;
+      animation-name: header-bg;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+    }
   }
-
 
   &__promo {
     position: absolute;
@@ -79,23 +83,36 @@
   }
 }
 
+@media(min-width: 431px) {
+  .page-header {
+
+    &__container {
+      width: auto;
+    }
+
+  }
+}
+
 
 @media(min-width: $tablet-width) {
   .page-header {
-    min-height: 825px;
-    background-image: url('../img/header-bg-tablet.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 460px 0;
 
-    &::before {
-      width: 327px;
-      height: 499px;
-      top: 162px;
-      left: 50%;
-      background-size: 327px 499px;
-      animation-name: initial;
-      // box-shadow: 5px 5px 35px -10px rgba(0, 0, 0, .5);
+    &__container {
+      min-height: 825px;
+      background-image: url('../img/header-bg-tablet.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 460px 0;
+  
+      &::before {
+        width: 327px;
+        height: 499px;
+        top: 162px;
+        left: 50%;
+        background-size: 327px 499px;
+        animation-name: initial;
+        // box-shadow: 5px 5px 35px -10px rgba(0, 0, 0, .5);
+      }
     }
 
     &__promo {
